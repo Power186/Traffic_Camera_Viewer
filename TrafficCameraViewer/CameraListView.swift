@@ -9,11 +9,17 @@ import SwiftUI
 
 struct CameraListView: View {
     @ObservedObject var camerasVM = CameraViewModel()
+    @State private var searchText = ""
+    @State private var isSearching = false
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(camerasVM.cameras) { camera in
+                SearchBarView(searchText: $searchText, isSearching: $isSearching)
+                
+                ForEach(camerasVM.cameras.filter({
+                    $0.primaryRoad.lowercased().contains(searchText.lowercased()) || searchText.isEmpty
+                })) { camera in
                     NavigationLink(destination: CameraDetailView(camera: camera)) {
                         Text("\(camera.primaryRoad)")
                     }

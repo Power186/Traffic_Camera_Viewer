@@ -19,8 +19,10 @@ struct Camera: Codable, Identifiable {
     var imageUrl: String?
     var latitude: Double
     var longitude: Double
+    var streamUrl: String
     
     enum CodingKeys: String, CodingKey {
-        case id, name, primaryRoad, crossStreet, imageUrl, latitude, longitude
+        case id, name, primaryRoad, crossStreet, imageUrl, latitude, longitude, streamUrl
     }
 }
+
