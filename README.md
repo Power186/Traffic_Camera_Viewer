@@ -1,6 +1,8 @@
 # Traffic_Camera_Viewer
 iOS App: Traffic Viewer
 
+![bonusGif](updated.gif)
+
 ![gif](clip.gif)
 
 ## Built with:
