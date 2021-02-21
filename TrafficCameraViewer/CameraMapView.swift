@@ -19,29 +19,31 @@ struct CameraMapView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
-                Map(coordinateRegion: $region,
-                    annotationItems: annotationFilter()) { camera in
-                    MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: camera.latitude, longitude: camera.longitude)) {
-                        
-                        NavigationLink(destination: CameraDetailView(camera: camera)) {
-                            Image(systemName: "mappin.and.ellipse")
-                                .imageScale(.large)
+            ScrollView {
+                VStack(spacing: 20) {
+                    Map(coordinateRegion: $region,
+                        annotationItems: annotationFilter()) { camera in
+                        MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: camera.latitude, longitude: camera.longitude)) {
+                            
+                            NavigationLink(destination: CameraDetailView(camera: camera)) {
+                                Image(systemName: "mappin.and.ellipse")
+                                    .imageScale(.large)
+                            }
                         }
                     }
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .frame(width: 300, height: 375)
+                    
+                    searchInfo
+                    
+                    searchButton
+                    
+                    Spacer()
+                    .navigationBarTitle("Cameras Map")
+                    .onAppear(perform: {
+                        cameraVM.fetchCameras()
+                    })
                 }
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-                .frame(width: 300, height: 375)
-                
-                searchInfo
-                
-                searchButton
-                
-                Spacer()
-                .navigationBarTitle("Cameras Map")
-                .onAppear(perform: {
-                    cameraVM.fetchCameras()
-                })
             }
         }
     } // body
