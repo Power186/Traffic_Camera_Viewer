@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D21EFBA925E3D94000454874 /* Extension-Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21EFBA825E3D94000454874 /* Extension-Array.swift */; };
 		D26B516125DFA4C700E90C5F /* CameraMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26B516025DFA4C700E90C5F /* CameraMapView.swift */; };
 		D26B516725DFE4C100E90C5F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26B516625DFE4C100E90C5F /* Location.swift */; };
 		D26B516D25DFE8D700E90C5F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26B516C25DFE8D700E90C5F /* MainView.swift */; };
@@ -19,12 +20,25 @@
 		D2C90D5425DF0BAD00E4C445 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C90D5325DF0BAD00E4C445 /* NetworkController.swift */; };
 		D2C90D5825DF0F9600E4C445 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C90D5725DF0F9600E4C445 /* CameraViewModel.swift */; };
 		D2C90D5B25DF16E800E4C445 /* CameraDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C90D5A25DF16E800E4C445 /* CameraDetailView.swift */; };
+		D2D583FF25E3C76D00251852 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D583FE25E3C76D00251852 /* UserSettings.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D27EB9ED25E36602006BEF01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2C90D3525DF0A8C00E4C445 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2C90D3C25DF0A8C00E4C445;
+			remoteInfo = TrafficCameraViewer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		D21EFBA825E3D94000454874 /* Extension-Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-Array.swift"; sourceTree = "<group>"; };
 		D26B516025DFA4C700E90C5F /* CameraMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraMapView.swift; sourceTree = "<group>"; };
 		D26B516625DFE4C100E90C5F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D26B516C25DFE8D700E90C5F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D27EB9E825E36602006BEF01 /* TrafficCameraViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficCameraViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D286B17725E04558003F86AB /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		D2C90D3D25DF0A8C00E4C445 /* TrafficCameraViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficCameraViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C90D4025DF0A8C00E4C445 /* TrafficCameraViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficCameraViewerApp.swift; sourceTree = "<group>"; };
@@ -36,9 +50,17 @@
 		D2C90D5325DF0BAD00E4C445 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		D2C90D5725DF0F9600E4C445 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		D2C90D5A25DF16E800E4C445 /* CameraDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDetailView.swift; sourceTree = "<group>"; };
+		D2D583FE25E3C76D00251852 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D27EB9E525E36602006BEF01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2C90D3A25DF0A8C00E4C445 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				D2C90D3D25DF0A8C00E4C445 /* TrafficCameraViewer.app */,
+				D27EB9E825E36602006BEF01 /* TrafficCameraViewerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +99,8 @@
 				D286B17725E04558003F86AB /* SearchBarView.swift */,
 				D2C90D5725DF0F9600E4C445 /* CameraViewModel.swift */,
 				D2C90D5325DF0BAD00E4C445 /* NetworkController.swift */,
+				D2D583FE25E3C76D00251852 /* UserSettings.swift */,
+				D21EFBA825E3D94000454874 /* Extension-Array.swift */,
 				D26B516625DFE4C100E90C5F /* Location.swift */,
 				D2C90D5025DF0AFA00E4C445 /* Device.swift */,
 				D2C90D4425DF0A8E00E4C445 /* Assets.xcassets */,
@@ -96,6 +121,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D27EB9E725E36602006BEF01 /* TrafficCameraViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D27EB9F125E36602006BEF01 /* Build configuration list for PBXNativeTarget "TrafficCameraViewerTests" */;
+			buildPhases = (
+				D27EB9E425E36602006BEF01 /* Sources */,
+				D27EB9E525E36602006BEF01 /* Frameworks */,
+				D27EB9E625E36602006BEF01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D27EB9EE25E36602006BEF01 /* PBXTargetDependency */,
+			);
+			name = TrafficCameraViewerTests;
+			productName = TrafficCameraViewerTests;
+			productReference = D27EB9E825E36602006BEF01 /* TrafficCameraViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D2C90D3C25DF0A8C00E4C445 /* TrafficCameraViewer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2C90D4C25DF0A8E00E4C445 /* Build configuration list for PBXNativeTarget "TrafficCameraViewer" */;
@@ -122,6 +165,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					D27EB9E725E36602006BEF01 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D2C90D3C25DF0A8C00E4C445;
+					};
 					D2C90D3C25DF0A8C00E4C445 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -141,11 +188,19 @@
 			projectRoot = "";
 			targets = (
 				D2C90D3C25DF0A8C00E4C445 /* TrafficCameraViewer */,
+				D27EB9E725E36602006BEF01 /* TrafficCameraViewerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D27EB9E625E36602006BEF01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2C90D3B25DF0A8C00E4C445 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,6 +213,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D27EB9E425E36602006BEF01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2C90D3925DF0A8C00E4C445 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,17 +229,67 @@
 				D26B516D25DFE8D700E90C5F /* MainView.swift in Sources */,
 				D26B516125DFA4C700E90C5F /* CameraMapView.swift in Sources */,
 				D2C90D5125DF0AFA00E4C445 /* Device.swift in Sources */,
+				D21EFBA925E3D94000454874 /* Extension-Array.swift in Sources */,
 				D26B516725DFE4C100E90C5F /* Location.swift in Sources */,
 				D2C90D5B25DF16E800E4C445 /* CameraDetailView.swift in Sources */,
 				D2C90D4325DF0A8C00E4C445 /* CameraListView.swift in Sources */,
 				D2C90D5825DF0F9600E4C445 /* CameraViewModel.swift in Sources */,
 				D2C90D4125DF0A8C00E4C445 /* TrafficCameraViewerApp.swift in Sources */,
+				D2D583FF25E3C76D00251852 /* UserSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D27EB9EE25E36602006BEF01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2C90D3C25DF0A8C00E4C445 /* TrafficCameraViewer */;
+			targetProxy = D27EB9ED25E36602006BEF01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		D27EB9EF25E36602006BEF01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7KJCMM3NN;
+				INFOPLIST_FILE = TrafficCameraViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.TrafficCameraViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrafficCameraViewer.app/TrafficCameraViewer";
+			};
+			name = Debug;
+		};
+		D27EB9F025E36602006BEF01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7KJCMM3NN;
+				INFOPLIST_FILE = TrafficCameraViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.TrafficCameraViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrafficCameraViewer.app/TrafficCameraViewer";
+			};
+			name = Release;
+		};
 		D2C90D4A25DF0A8E00E4C445 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -341,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D27EB9F125E36602006BEF01 /* Build configuration list for PBXNativeTarget "TrafficCameraViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27EB9EF25E36602006BEF01 /* Debug */,
+				D27EB9F025E36602006BEF01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D2C90D3825DF0A8C00E4C445 /* Build configuration list for PBXProject "TrafficCameraViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
