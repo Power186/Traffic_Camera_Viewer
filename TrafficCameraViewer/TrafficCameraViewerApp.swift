@@ -12,7 +12,7 @@ struct TrafficCameraViewerApp: App {
     
     init() {
         let temporaryDirectory = NSTemporaryDirectory()
-        let urlCache = URLCache(memoryCapacity: 40_000_000, diskCapacity: 65_000_000, diskPath: temporaryDirectory)
+        let urlCache = URLCache(memoryCapacity: 100_000_000, diskCapacity: 125_000_000, diskPath: temporaryDirectory)
         URLCache.shared = urlCache
     }
     
